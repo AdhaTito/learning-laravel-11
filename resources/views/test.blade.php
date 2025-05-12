@@ -8,8 +8,9 @@
         <div class="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">We
                 invest in the world’s potential</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on
-                markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Artikel yang baik dapat
+                memberikan banyak manfaat, mulai dari meningkatkan pengetahuan, membuka wawasan baru, hingga memberikan
+                inspirasi dan motivasi.
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                 <a href="/blog"
@@ -29,13 +30,10 @@
         </div>
     </section>
     {{-- end jumbotron --}}
-
-    <div class="container">
-        <div class="flex items-center justify-center">
-            <div class="block pt-4 text-center">
-                <h1 class="pt-4 text-2xl font-bold text-orange-600">Ini Halaman Home Dari Learning Laravel 11</h1>
-                <h1> Created by: {{ $nama }}</h1>
-            </div>
+    <div class="flex items-center justify-center py-10">
+        <div class="text-center">
+            <h1 class="text-2xl font-bold text-orange-600">Ini Halaman Home Dari Learning Laravel 11</h1>
+            <h1>Created by: {{ $nama }}</h1>
         </div>
     </div>
 

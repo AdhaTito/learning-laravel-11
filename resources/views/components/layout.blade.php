@@ -5,7 +5,7 @@
 <x-header>{{ $title }}</x-header>
 {{-- End Header --}}
 
-<body class="bg-gray-200">
+<body class="bg-gray-200 font-poppins">
 
     {{-- navbar --}}
     <x-navbar></x-navbar>

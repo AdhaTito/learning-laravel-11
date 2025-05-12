@@ -3,7 +3,7 @@
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('images/laravel.png') }}" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-orange-600">Laravel 11</span>
+                <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-orange-600">Adha Tito</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"

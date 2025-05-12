@@ -12,10 +12,6 @@ export default {
             padding: "16px",
         },
         extend: {
-            backgroundImage: {
-                "hero-pattern": "url('images/bg-jumbotron.jpg')",
-                "hero-jumbotron": "url('images/jumbotron.jpg')",
-            },
             colors: {
                 mainColor: "#",
                 secondaryColor: "#",
@@ -28,7 +24,6 @@ export default {
                 "2xl": "1320px",
             },
         },
-        extend: {},
     },
     plugins: [require("flowbite/plugin")],
 };
