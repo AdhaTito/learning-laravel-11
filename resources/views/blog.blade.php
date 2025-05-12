@@ -13,7 +13,7 @@
                         <h1 class="text-4xl font-bold">{{ $post['title'] }}</h1>
                     </a>
                     <h2 class="mt-2 text-xl font-extralight">{{ $post['author'] }} |
-                        {{ $post->create_at }}</h2>
+                        {{ $post->created_at->diffForHumans() }}</h2>
                     <p class="mt-4 mb-4 font-normal text-justify">{{ Str::limit($post['blog'], '200') }}</p>
                     <a href="/blog/{{ $post['slug'] }}"
                         class="font-medium border-b-2 border-orange-400 cursor-pointer active:font-light active:border-b ">Read

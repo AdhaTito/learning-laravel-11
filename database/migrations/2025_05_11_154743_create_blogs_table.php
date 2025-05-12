@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('title', 362)->nullable();
             $table->string('author', 362)->nullable();
             $table->text('blog')->nullable();
-            $table->date('create_at')->nullable();
-            $table->date('update_at')->nullable();
+            $table->date('created_at')->nullable();
+            $table->date('updated_at')->nullable();
         });
     }
 
