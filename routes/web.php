@@ -24,16 +24,17 @@ Route::get('/contact', function () {
 });
 
 Route::get('/blog', function () {
-    return view('blog', ['title' => 'Blog Site', 'blogs' => Blog::all()]);
+    return view('blog', ['title' => 'Blogs Site', 'blogs' => Blog::all()]);
 });
 
 Route::get('/blog/{blog:slug}', function (Blog $blog) {
 
     // $getpost = Blog::find($id);
 
-    return view('single_blog', ['title' => 'Single Post', 'getpost' => $blog]);
+    return view('single_blog', ['title' => 'Single Post', 'blogs' => $blog]);
 });
 
+// Filter dari author balik kehalaman blog 
 Route::get('/author/{user}', function (User $user) {
-    return view('blog', ['title' => 'Articles By', 'blogs' => $user->blog]);
+    return view('blog', ['title' => 'By ' . $user->name, 'blogs' => $user->blogs]);
 });
