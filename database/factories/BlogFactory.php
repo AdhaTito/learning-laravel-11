@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
@@ -24,6 +25,7 @@ class BlogFactory extends Factory
             'slug' => Str::slug($title),
             'title' => $title,
             'author_id' => User::factory(),
+            'category_id' => Category::factory(),
             'blog' => $this->faker->paragraph(20),
             'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
             'updated_at' => $this->faker->dateTimeBetween('-1 month', 'now'),

@@ -2,7 +2,6 @@
 
 use App\Models\Blog;
 use App\Models\User;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 
@@ -35,6 +34,6 @@ Route::get('/blog/{blog:slug}', function (Blog $blog) {
 });
 
 // Filter dari author balik kehalaman blog 
-Route::get('/author/{user}', function (User $user) {
-    return view('blog', ['title' => 'By ' . $user->name, 'blogs' => $user->blogs]);
+Route::get('/author/{user:username}', function (User $user) {
+    return view('blog', ['title' => count($user->blogs) . ' Posting By ' . $user->name, 'blogs' => $user->blogs]);
 });

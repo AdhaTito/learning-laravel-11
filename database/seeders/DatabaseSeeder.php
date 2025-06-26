@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Blog;
+use App\Models\Category;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
         Blog::factory()->count(10)->create(); // Membuat 10 blog palsu
         User::factory()->count(10)->create(); // Membuat 10 user palsu
-
+        Category::factory()->count(2)->create();
         // $this->call(UserSeeder::class);
         // $this->call(BlogSeeder::class);
 

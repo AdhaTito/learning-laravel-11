@@ -12,7 +12,7 @@
                         <h1 class="text-3xl font-bold">{{ $blog['title'] }}</h1>
                     </a>
                     <div class="mt-2 mr-4 text-xl">
-                        <a href="/author/{{ $blog->author->id }}"
+                        <a href="/author/{{ $blog->author->username }}"
                             class="mt-2 text-lg font-normal hover:underline">{{ $blog->author->name }}</a>
                         <a>
                             | kategori |
@@ -30,5 +30,11 @@
             @endforeach
         </div>
     </div>
+
+    {{-- Pagination --}}
+    {{-- <div class="mb-10 ml-24 mr-24">
+        {{ $blogs->links() }}
+    </div> --}}
+    {{-- End Pagination --}}
 
 </x-layout>

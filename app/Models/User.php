@@ -48,6 +48,6 @@ class User extends Authenticatable
 
     public function blogs(): HasMany
     {
-        return $this->hasMany(Blog::class, 'author_id');
-    }
+        return $this->hasMany(Blog::class, 'author_id');        //Membuat relasi antara tabel user dan blogs 
+    }                                                           // Menggunakan HasMany
 }
