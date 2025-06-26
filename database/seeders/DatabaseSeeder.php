@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Blog::factory()->count(10)->create(); // Membuat 10 blog palsu
-        User::factory()->count(10)->create(); // Membuat 10 user palsu
         Category::factory()->count(2)->create();
+        User::factory()->count(10)->create(); // Membuat 10 user palsu
+        Blog::factory()->count(10)->create(); // Membuat 10 blog palsu
         // $this->call(UserSeeder::class);
         // $this->call(BlogSeeder::class);
 

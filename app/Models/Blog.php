@@ -21,5 +21,5 @@ class Blog extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);       //Membuat relasi antara tabel blog dan category 
-    }                                                  // Menggunakan BelongsTo
+    }                                                                 // Menggunakan BelongsTo
 };
